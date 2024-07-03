@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "d84b8485-3d3f-4c19-abd0-44c5ec3142f9",
+		"name": "Microservices Coursework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30946305"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "health check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/user/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"user",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"\",\r\n    \"name\":\"Krishan\",\r\n    \"userName\":\"Krishan Mihiranga\",\r\n    \"role\":\"ADMIN\",\r\n    \"password\":\"123\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"\",\r\n    \"name\":\"Krishan\",\r\n    \"userName\":\"Krishan Mihiranga\",\r\n    \"role\":\"ADMIN\",\r\n    \"password\":\"123\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Verify",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"\",\r\n    \"name\":\"Krishan\",\r\n    \"userName\":\"Krishan Mihiranga\",\r\n    \"role\":\"ADMIN\",\r\n    \"password\":\"123\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/user/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"user",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle",
+			"item": [
+				{
+					"name": "health check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/vehicle/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"vehicle",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicle Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/vehicle/WPABC1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"vehicle",
+								"WPABC1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicle Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\":\"WPABC1234\",\r\n    \"ownerNic\":\"200302101289\",\r\n    \"ownerName\":\"Krishan\"\r\n    \r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicle Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\":\"WPABC1234\",\r\n    \"ownerNic\":\"200302101389\",\r\n    \"ownerName\":\"Mihiranaga\"\r\n    \r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "health check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/ticket/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"ticket",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/ticket/e78bc94a-d497-4d19-b226-ac253ad2cb67",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"ticket",
+								"e78bc94a-d497-4d19-b226-ac253ad2cb67"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ticketId\":\"\",\r\n    \"date\":\"2024-07-03\",\r\n    \"price\":300,\r\n    \"fromWhere\":\"Galanigama\",\r\n    \"toWhere\":\"Galle\",\r\n    \"status\":\"PENDING\",\r\n    \"userId\":\"U0001\",\r\n    \"vehicleId\":\"WPA1234\"\r\n\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket Status Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ticketId\":\"\",\r\n    \"date\":\"2024-07-03\",\r\n    \"price\":300,\r\n    \"fromWhere\":\"Galanigama\",\r\n    \"toWhere\":\"Galle\",\r\n    \"status\":\"PAYED\",\r\n    \"userId\":\"U0001\",\r\n    \"vehicleId\":\"WPA1234\"\r\n\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/ticket/e78bc94a-d497-4d19-b226-ac253ad2cb67",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"ticket",
+								"e78bc94a-d497-4d19-b226-ac253ad2cb67"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "health check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/payment/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"payment",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentId\":\"\",\r\n    \"date\":\"2024-07-03\",\r\n    \"ticketId\":\"e78bc94a-d497-4d19-b226-ac253ad2cb67\",\r\n    \"userId\":\"U0001\",\r\n    \"vehicleId\":\"WPA1234\"\r\n\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hts/api/v1/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hts",
+								"api",
+								"v1",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
